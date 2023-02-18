@@ -1,14 +1,16 @@
 # Modeling the Shape of the Brain Connectome via Deep Neural Networks
 ### [Paper](https://arxiv.org/pdf/2203.06122.pdf) | [Slides](https://users.cs.utah.edu/~haocheng/slides/ipmi2023.pdf)
-PyTorch implementation of estimating a Riemannian manifold accommodating brain connectome.<br><br>
+PyTorch implementation of estimating a Riemannian manifold accommodating brain connectome faithfully.<br><br>
  [Haocheng Dai](https://users.cs.utah.edu/~haocheng/)<sup>1</sup>,
  [Martin Bauer](https://www.math.fsu.edu/~bauer/)<sup>2</sup>,
  [P. Thomas Fletcher](https://scholar.google.com/citations?user=7pRRhkkAAAAJ&hl=en)<sup>3</sup>,
  [Sarang Joshi](https://scholar.google.com/citations?user=GyqdQTEAAAAJ&hl=en)<sup>1</sup> <br>
  <sup>1</sup>University of Utah, <sup>2</sup>Florida State University, <sup>3</sup>University of Virginia <br>
-International Conference on Information Processing in Medical Imaging (IPMI), 2023
+ <br>
+International Conference on Information Processing in Medical Imaging (IPMI), 2023 :tent:
 
 <img src='Figures/architecture.png' alt="drawing" width="800"/>
+<img src='Figures/performance.png' alt="drawing" width="800"/>
 
 ## TL;DR quickstart
 
@@ -42,7 +44,7 @@ We provide a conda environment setup file including all of the above dependencie
 conda env create -f environment.yml
 ```
 
-## What is a MetricCNN?
+## What is a Metric CNN?
 
 A metric CNN is a simple convolutional encoder-decoder neural network (CEDNN) trained to estimating a Riemannian manifold that represents the brain connectome faithfully using a covariant derivative loss. The network directly maps from multiple vector fields (4D output) to a Riemannian metric field (5D output), acting as the manifold so we can run geodesic tractography on it and also construct connectome Riemannian manifold atlas from tractography data to statistically quantify the geometric variability of structural connectivity across a population.
 
