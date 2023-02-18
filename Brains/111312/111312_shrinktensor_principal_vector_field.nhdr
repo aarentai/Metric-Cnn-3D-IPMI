@@ -1,0 +1,13 @@
+NRRD0004
+# Complete NRRD file format specification at:
+# http://teem.sourceforge.net/nrrd/format.html
+type: double
+dimension: 4
+space: left-posterior-superior
+sizes: 48 64 48 3
+space directions: none (1,0,0) (0,1,0) (0,0,1)
+kinds: vector domain domain domain
+endian: little
+encoding: raw
+space origin: (0,0,0)
+data file: 111312_shrinktensor_principal_vector_field.raw
