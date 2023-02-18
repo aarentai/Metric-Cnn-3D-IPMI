@@ -1,11 +1,11 @@
 # Modeling the Shape of the Brain Connectome via Deep Neural Networks
 ### [Paper](https://arxiv.org/pdf/2203.06122.pdf) | [Slides](https://users.cs.utah.edu/~haocheng/slides/ipmi2023.pdf)
 PyTorch implementation of estimating a Riemannian manifold accommodating brain connectome faithfully.<br><br>
- [Haocheng Dai](https://users.cs.utah.edu/~haocheng/)<sup>1</sup>,
- [Martin Bauer](https://www.math.fsu.edu/~bauer/)<sup>2</sup>,
- [P. Thomas Fletcher](https://scholar.google.com/citations?user=7pRRhkkAAAAJ&hl=en)<sup>3</sup>,
- [Sarang Joshi](https://scholar.google.com/citations?user=GyqdQTEAAAAJ&hl=en)<sup>1</sup> <br>
- <sup>1</sup>University of Utah, <sup>2</sup>Florida State University, <sup>3</sup>University of Virginia <br>
+ :desert: [Haocheng Dai](https://users.cs.utah.edu/~haocheng/),
+ :crocodile: [Martin Bauer](https://www.math.fsu.edu/~bauer/),
+ :ocean: [P. Thomas Fletcher](https://scholar.google.com/citations?user=7pRRhkkAAAAJ&hl=en),
+ :desert: [Sarang Joshi](https://scholar.google.com/citations?user=GyqdQTEAAAAJ&hl=en) <br>
+ :desert:University of Utah, :crocodile:Florida State University, :ocean:University of Virginia <br>
  <br>
 International Conference on Information Processing in Medical Imaging (IPMI), 2023 :tent:
 
