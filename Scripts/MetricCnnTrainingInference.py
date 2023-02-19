@@ -71,7 +71,7 @@ def train(brain_id, input_dir, output_dir, gpu_device=0, epoch_num=10000, learni
             'model_state_dict': model.state_dict(),
             'optimizer_id_state_dict': optimizer.state_dict(),
             'loss_id': epoch_loss_id,
-            }, f'{output_dir}/epoch_{epoch}_checkpoint.pth.tar')
+            }, f'{output_dir}/model.pth.tar')
 
         if epoch_loss_id<terminating_loss:
             torch.save({
@@ -79,11 +79,11 @@ def train(brain_id, input_dir, output_dir, gpu_device=0, epoch_num=10000, learni
             'model_state_dict': model.state_dict(),
             'optimizer_id_state_dict': optimizer.state_dict(),
             'loss_id': epoch_loss_id,
-            }, f'{output_dir}/final_checkpoint.pth.tar')
+            }, f'{output_dir}/model.pth.tar')
             break
             
     
-    checkpoint = torch.load(f'{output_dir}/epoch_{epoch}_checkpoint.pth.tar')
+    checkpoint = torch.load(f'{output_dir}/model.pth.tar')
     model = DenseED(in_channels=3, out_channels=7, 
                     imsize=100,
                     blocks=blocks,

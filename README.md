@@ -18,8 +18,8 @@ To setup a conda environment, begin the training process, and inference:
 ```
 conda env create -f environment.yml
 conda activate metcnn
-cd MetCnn3D-IPMI/Scripts/
-bash runMetCnnTrain.sh
+cd Metric-Cnn-3D-IPMI/Scripts/
+bash runMetricCnnTrainingInference.sh
 ```
 
 ## Setup
@@ -50,6 +50,10 @@ A metric CNN is a simple convolutional encoder-decoder neural network (CEDNN) tr
 
 
 Estimating a Riemannian metric takes less than a few hours and only requires a single GPU, depending on resolution. Inference a Riemannian metric from an optimized MetricCNN takes less than a second, again depending on resolution.
+
+## 2D implementaion
+
+You can find the 2D implementation [here](https://github.com/aarentai/Metric-Cnn-2D-IPMI).
 
 
 ## Citation
